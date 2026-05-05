@@ -1,0 +1,150 @@
+{
+  "snapshot_date": "2026-05-05",
+  "snapshot_week": "week2",
+  "note": "第二次运行 —— 模拟一周后竞品发生了变化，Agent 将对比 week1 基准数据发现差异",
+  "changes_summary": "飞书涨价+缩减额度、宜搭新增AI入口、微搭推出私有部署版",
+  "competitors": {
+    "dingtalk_yida": {
+      "name": "钉钉宜搭",
+      "url_pricing": "https://www.aliwork.com/pricing",
+      "url_homepage": "https://www.aliwork.com",
+      "last_checked": "2026-05-05T09:00:00+08:00",
+      "pricing": {
+        "free": {
+          "name": "免费版",
+          "price": 0,
+          "price_unit": "元/月",
+          "limits": "10人使用，5个应用",
+          "features": ["基础表单", "流程审批", "基础报表"],
+          "_change": "无变化"
+        },
+        "professional": {
+          "name": "专业版",
+          "price": 399,
+          "price_unit": "元/月",
+          "limits": "不限人数",
+          "features": ["高级表单", "自动化流程", "API对接", "自定义打印", "AI助手（通义千问）"],
+          "_change": "🟡 新增 AI 助手功能（+¥50/月单独计费）"
+        },
+        "enterprise": {
+          "name": "专属版",
+          "price": null,
+          "price_unit": "联系销售",
+          "limits": "企业级定制",
+          "features": ["私有化部署", "专属客服", "SLA保障"],
+          "_change": "🟢 描述从'大客户专属'改为'企业级定制'"
+        }
+      },
+      "homepage_snapshot": {
+        "hero_text": "低代码，让业务更快落地",
+        "cta_button": "立即体验",
+        "nav_items": ["产品", "解决方案", "客户案例", "开发者", "AI 能力", "定价"],
+        "notable_elements": ["🟡 导航栏新增'AI 能力'入口", "🟢 Hero文案变更", "🟢 CTA按钮文案变更"],
+        "_changes": [
+          {"field": "hero_text", "old": "让每一个人都能开发应用", "new": "低代码，让业务更快落地", "priority": "low"},
+          {"field": "cta_button", "old": "免费试用", "new": "立即体验", "priority": "low"},
+          {"field": "nav_items", "added": "AI 能力", "priority": "medium"}
+        ]
+      },
+      "news_latest": [
+        {"title": "宜搭 x 通义千问，AI 助手正式上线", "date": "2026-04-30", "url": "https://www.aliwork.com/news/ai-assistant", "priority": "medium"},
+        {"title": "宜搭 4.0 版本发布，全新编辑器体验", "date": "2026-04-25", "url": "https://www.aliwork.com/news/v4", "priority": "medium"}
+      ]
+    },
+    "feishu_base": {
+      "name": "飞书多维表格",
+      "url_pricing": "https://base.feishu.cn/pricing",
+      "url_homepage": "https://www.feishu.cn",
+      "last_checked": "2026-05-05T09:00:00+08:00",
+      "pricing": {
+        "free": {
+          "name": "基础版",
+          "price": 0,
+          "price_unit": "元/人/月",
+          "limits": "50000条记录",
+          "features": ["基础表格", "基础视图", "协作编辑"],
+          "_change": "无变化"
+        },
+        "business": {
+          "name": "商业版",
+          "price": 35,
+          "price_unit": "元/人/月",
+          "limits": "不限记录数",
+          "features": ["高级视图", "自动化流程 3000次/月", "API调用", "高级权限"],
+          "_change": "🔴 价格从 ¥30→¥35（涨幅17%），自动化额度从 5000→3000次/月（减少40%）"
+        },
+        "professional": {
+          "name": "专业版",
+          "price": 65,
+          "price_unit": "元/人/月",
+          "limits": "不限",
+          "features": ["单表千万行", "高级自动化", "数据看板", "审计日志"],
+          "_change": "🔴 价格从 ¥60→¥65（涨幅8%）"
+        }
+      },
+      "homepage_snapshot": {
+        "hero_text": "飞书，先进企业协作与管理平台",
+        "cta_button": "免费使用",
+        "nav_items": ["产品", "解决方案", "客户", "资源", "定价"],
+        "notable_elements": ["🟡 新增'2026全新升级'Banner，指向升级页面"],
+        "_changes": [
+          {"field": "banner", "added": "2026全新升级入口", "url": "https://www.feishu.cn/landing/feishu_new_base_2026", "priority": "medium"}
+        ]
+      },
+      "news_latest": [
+        {"title": "飞书多维表格 2026 全新升级：单表千万行", "date": "2026-05-02", "url": "https://www.feishu.cn/landing/feishu_new_base_2026", "priority": "medium"}
+      ]
+    },
+    "tencent_weda": {
+      "name": "腾讯云微搭",
+      "url_pricing": "https://weda.cloud.tencent.com/price",
+      "url_homepage": "https://weda.cloud.tencent.com",
+      "last_checked": "2026-05-05T09:00:00+08:00",
+      "pricing": {
+        "free": {
+          "name": "免费版",
+          "price": 0,
+          "price_unit": "元/月",
+          "limits": "1个应用",
+          "features": ["基础组件", "基础数据源", "微信小程序"],
+          "_change": "无变化"
+        },
+        "standard": {
+          "name": "标准版",
+          "price": 99,
+          "price_unit": "元/月起",
+          "limits": "按量付费",
+          "features": ["企业微信集成", "自定义域名", "多环境部署"],
+          "_change": "无变化"
+        },
+        "professional": {
+          "name": "专业版",
+          "price": null,
+          "price_unit": "资源套餐+按量付费",
+          "limits": "不限",
+          "features": ["API网关", "云函数", "私有化部署咨询"],
+          "_change": "无变化"
+        },
+        "private_deploy": {
+          "name": "私有部署版",
+          "price": 2388,
+          "price_unit": "元/年（首年特惠）",
+          "limits": "不限B端用户和应用数",
+          "features": ["私有化部署", "数据完全自主", "企业级安全", "专属技术支持"],
+          "_change": "🟡 全新套餐！首次出现"
+        }
+      },
+      "homepage_snapshot": {
+        "hero_text": "低代码，高效率",
+        "cta_button": "免费体验",
+        "nav_items": ["产品概述", "解决方案", "模板中心", "定价", "文档"],
+        "notable_elements": ["🟡 定价页新增'私有部署版'Banner", "🟡 新增'能力包'付费入口"],
+        "_changes": [
+          {"field": "pricing_page", "added": "私有部署版首年特惠Banner", "priority": "medium"},
+          {"field": "pricing_page", "added": "能力包入口", "priority": "medium"}
+        ]
+      },
+      "news_latest": []
+    }
+  }
+}

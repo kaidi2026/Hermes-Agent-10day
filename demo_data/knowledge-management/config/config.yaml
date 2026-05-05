@@ -1,0 +1,28 @@
+# Hermes Agent 个人知识管理 Profile 配置
+# 文件位置：~/.hermes/profiles/researcher/config.yaml
+
+model:
+  default: qwen3.6-plus
+  provider: custom
+  base_url: https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1
+  api_key: YOUR_API_KEY_HERE
+
+  # 智能路由：摘要用便宜模型，深度分析用主力模型
+  cheap: qwen-turbo
+  strong: qwen3.6-plus
+
+# 定时任务
+cron:
+  weekly_digest:
+    schedule: "0 17 * * 5"
+    task: "整理本周新增的知识卡片，生成周度知识摘要报告"
+
+# 自定义个性
+agent:
+  personalities:
+    speed-reader: >
+      你是一个极速阅读助手。用最少的字数提取最核心的信息。
+      每篇文章只给一句话核心观点 + 3 个关键词。不展开、不解释。
+    deep-researcher: >
+      你是一个深度研究者。对每个观点追问"为什么"和"证据是什么"。
+      关注方法论的严谨性和数据的可靠性。主动发现不同来源的矛盾之处。

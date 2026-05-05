@@ -1,0 +1,115 @@
+{
+  "snapshot_date": "2026-04-28",
+  "snapshot_week": "week1",
+  "note": "首次运行基准数据 —— 模拟 Hermes Agent 第一次采集竞品定价页的结果",
+  "competitors": {
+    "dingtalk_yida": {
+      "name": "钉钉宜搭",
+      "url_pricing": "https://www.aliwork.com/pricing",
+      "url_homepage": "https://www.aliwork.com",
+      "last_checked": "2026-04-28T09:00:00+08:00",
+      "pricing": {
+        "free": {
+          "name": "免费版",
+          "price": 0,
+          "price_unit": "元/月",
+          "limits": "10人使用，5个应用",
+          "features": ["基础表单", "流程审批", "基础报表"]
+        },
+        "professional": {
+          "name": "专业版",
+          "price": 399,
+          "price_unit": "元/月",
+          "limits": "不限人数",
+          "features": ["高级表单", "自动化流程", "API对接", "自定义打印"]
+        },
+        "enterprise": {
+          "name": "专属版",
+          "price": null,
+          "price_unit": "联系销售",
+          "limits": "大客户专属",
+          "features": ["私有化部署", "专属客服", "SLA保障"]
+        }
+      },
+      "homepage_snapshot": {
+        "hero_text": "让每一个人都能开发应用",
+        "cta_button": "免费试用",
+        "nav_items": ["产品", "解决方案", "客户案例", "开发者", "定价"],
+        "notable_elements": ["无 AI 相关入口"]
+      },
+      "news_latest": []
+    },
+    "feishu_base": {
+      "name": "飞书多维表格",
+      "url_pricing": "https://base.feishu.cn/pricing",
+      "url_homepage": "https://www.feishu.cn",
+      "last_checked": "2026-04-28T09:00:00+08:00",
+      "pricing": {
+        "free": {
+          "name": "基础版",
+          "price": 0,
+          "price_unit": "元/人/月",
+          "limits": "50000条记录",
+          "features": ["基础表格", "基础视图", "协作编辑"]
+        },
+        "business": {
+          "name": "商业版",
+          "price": 30,
+          "price_unit": "元/人/月",
+          "limits": "不限记录数",
+          "features": ["高级视图", "自动化流程 5000次/月", "API调用", "高级权限"]
+        },
+        "professional": {
+          "name": "专业版",
+          "price": 60,
+          "price_unit": "元/人/月",
+          "limits": "不限",
+          "features": ["单表千万行", "高级自动化", "数据看板", "审计日志"]
+        }
+      },
+      "homepage_snapshot": {
+        "hero_text": "飞书，先进企业协作与管理平台",
+        "cta_button": "免费使用",
+        "nav_items": ["产品", "解决方案", "客户", "资源", "定价"],
+        "notable_elements": ["无 2026 升级 Banner"]
+      },
+      "news_latest": []
+    },
+    "tencent_weda": {
+      "name": "腾讯云微搭",
+      "url_pricing": "https://weda.cloud.tencent.com/price",
+      "url_homepage": "https://weda.cloud.tencent.com",
+      "last_checked": "2026-04-28T09:00:00+08:00",
+      "pricing": {
+        "free": {
+          "name": "免费版",
+          "price": 0,
+          "price_unit": "元/月",
+          "limits": "1个应用",
+          "features": ["基础组件", "基础数据源", "微信小程序"]
+        },
+        "standard": {
+          "name": "标准版",
+          "price": 99,
+          "price_unit": "元/月起",
+          "limits": "按量付费",
+          "features": ["企业微信集成", "自定义域名", "多环境部署"]
+        },
+        "professional": {
+          "name": "专业版",
+          "price": null,
+          "price_unit": "资源套餐+按量付费",
+          "limits": "不限",
+          "features": ["API网关", "云函数", "私有化部署咨询"]
+        }
+      },
+      "homepage_snapshot": {
+        "hero_text": "低代码，高效率",
+        "cta_button": "免费体验",
+        "nav_items": ["产品概述", "解决方案", "模板中心", "定价", "文档"],
+        "notable_elements": ["无私有部署版入口"]
+      },
+      "news_latest": []
+    }
+  }
+}

@@ -1,0 +1,35 @@
+# Hermes Agent 竞品情报监控 Profile 配置
+# 文件位置：~/.hermes/profiles/competitor-intelligence/config.yaml
+
+model:
+  # 模型选择：推理能力强的模型更适合竞品分析
+  default: qwen3.6-plus
+  provider: custom
+  base_url: https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1
+  api_key: YOUR_API_KEY_HERE
+
+  # 智能路由：简单采集用便宜模型，深度分析用主力模型
+  cheap: qwen-turbo
+  strong: qwen3.6-plus
+
+# 定时任务配置
+cron:
+  # 周一和周四各跑一次竞品监控
+  competitor_monitor:
+    schedule: "0 9 * * 1,4"
+    task: "执行竞品情报监控任务，对比历史数据，生成报告"
+  
+  # 周五下午生成周报
+  weekly_report:
+    schedule: "0 16 * * 5"
+    task: "生成本周竞品情报周报汇总，通过飞书群发送"
+
+# 自定义个性
+agent:
+  personalities:
+    analyst: >
+      你是一位严谨的竞品分析师。只关注有实质意义的变化，
+      忽略 UI 调整和文案优化。每个发现都附带影响评估和建议行动。
+    alert: >
+      你是一位紧急情报播报员。用最简短的语言说出：
+      谁变了、变了什么、对我们影响多大、建议怎么做。
